@@ -1,60 +1,199 @@
- SOC Internship Task – Security Alert Monitoring & Incident Response
+# Security Alert Monitoring & Incident Response
 
- 📌 Overview
-This project demonstrates a beginner-level **Security Operations Center (SOC)** workflow involving **security alert monitoring, threat analysis, and incident response simulation** using **Splunk SIEM**.
-The goal of this task is to understand how SOC teams analyze logs, detect malicious activity, prioritize alerts, and respond to security incidents.
---
+## Splunk SIEM | SOC Analyst Internship Task
 
- 🛠 Tools & Technologies
-- Splunk (SIEM)
-- Sample Security Logs
-- Incident Response Documentation
+A hands-on Security Operations Center (SOC) project focused on security log analysis, alert investigation, threat identification, severity classification, and incident-response documentation using Splunk.
 
 ---
 
-#📂 Log Data
-The dataset includes simulated security events such as:
-- Login success & failed attempts
-- Connection attempts
-- Malware detections (Trojan, Rootkit, Spyware, Worm, Ransomware)
-- File access activities
+## 🎯 Project Objective
+
+The objective of this project is to simulate a basic SOC monitoring workflow using Splunk SIEM.
+
+The project focuses on:
+
+* Ingesting security logs
+* Searching and analyzing security events
+* Detecting suspicious activity
+* Investigating authentication anomalies
+* Identifying malware-related alerts
+* Investigating suspicious IP addresses
+* Classifying alerts based on severity
+* Documenting an incident-response process
 
 ---
 
-🔍 Analysis Performed
-- Log ingestion and field extraction in Splunk
-- Identification of malware-infected systems
-- Detection of suspicious IP addresses
-- Analysis of authentication anomalies
-- Correlation of malware events with file access
-- Alert severity classification
+## 🛠️ Tools & Technologies
+
+| Tool          | Purpose                                  |
+| ------------- | ---------------------------------------- |
+| Splunk        | SIEM and security log analysis           |
+| SPL           | Search and event investigation           |
+| Security Logs | Source data for analysis                 |
+| Markdown      | Investigation documentation              |
+| Git & GitHub  | Version control and portfolio management |
 
 ---
 
- 🚨 Alert Severity Classification
-- **Critical:** Ransomware behavior, Rootkit signature, Malware with file access
-- **High:** Trojan, Worm, Spyware detections
-- **Medium:** Multiple failed login attempts
-- **Low:** Normal login activity
+## 🔎 Security Events Analyzed
+
+The project involved analysis of security events such as:
+
+* Successful login attempts
+* Failed login attempts
+* Connection attempts
+* Malware detections
+* Suspicious IP activity
+* File access events
+
+Malware-related events included examples such as:
+
+* Trojan
+* Rootkit
+* Spyware
+* Worm
+* Ransomware-related activity
 
 ---
 
-## 🛡 Incident Response (Simulated)
-- Isolated affected systems
-- Blocked malicious IP addresses
-- Disabled compromised user accounts
-- Initiated antivirus and endpoint scans
+## 🚨 SOC Investigation Workflow
+
+```text
+Security Logs
+      ↓
+Log Ingestion
+      ↓
+Field & Event Analysis
+      ↓
+Alert Identification
+      ↓
+Investigation
+      ↓
+Severity Classification
+      ↓
+Incident Response
+      ↓
+Documentation
+```
 
 ---
 
-## 📄 Outcome
-This project helped build foundational knowledge in:
-- SOC alert monitoring
-- SIEM-based threat detection
-- Incident response workflow
-- Security reporting & documentation
+## 📊 Alert Severity
 
+| Severity | Example                                       |
+| -------- | --------------------------------------------- |
+| Critical | Severe malware or ransomware-related activity |
+| High     | Significant malware detection                 |
+| Medium   | Repeated failed authentication attempts       |
+| Low      | Normal/expected activity                      |
 
+Severity classification was performed for the purpose of this simulated SOC investigation.
 
-## 🔗 Tags
-SOC, SIEM, Splunk, Cybersecurity, Incide
+---
+
+## 🔍 Investigation Areas
+
+### Authentication Analysis
+
+Investigated successful and failed login activity to identify unusual authentication behavior.
+
+### Malware Analysis
+
+Reviewed malware-related security events and assessed their potential impact.
+
+### Suspicious IP Analysis
+
+Reviewed network-related events to identify potentially suspicious source IP addresses.
+
+### File Access Analysis
+
+Correlated security events with file-access activity where applicable.
+
+---
+
+## 🛡️ Incident Response
+
+Based on the simulated findings, recommended response actions included:
+
+1. Isolating affected systems
+2. Securing compromised accounts
+3. Blocking confirmed malicious indicators
+4. Performing endpoint security scans
+5. Reviewing related logs
+6. Preserving evidence for further investigation
+
+**Note:** Response actions were simulated/documented and were not performed against real production systems.
+
+---
+
+## 📁 Repository Structure
+
+```text
+FUTURE_CS_02/
+│
+├── README.md
+│
+├── Evidence/
+│   ├── Dashboard/
+│   ├── Alert-Analysis/
+│   ├── Log-Analysis/
+│   └── Incident-Response/
+│
+├── Queries/
+│   └── SPL-Queries.md
+│
+├── Reports/
+│   └── Incident-Response-Report.md
+│
+├── Logs/
+│
+└── Screenshots/
+```
+
+---
+
+## 📸 Evidence
+
+The repository contains evidence from the Splunk investigation, including:
+
+* Dashboard analysis
+* Alert investigation
+* Authentication analysis
+* Suspicious activity analysis
+* Incident-response documentation
+
+See the `Evidence/` directory for investigation artifacts.
+
+---
+
+## 📚 Skills Demonstrated
+
+* SIEM monitoring
+* Splunk
+* SPL
+* Security log analysis
+* Alert triage
+* Authentication monitoring
+* Malware alert investigation
+* Suspicious IP investigation
+* Incident response
+* Security documentation
+* Git & GitHub
+
+---
+
+## ⚠️ Disclaimer
+
+This project was created for educational and internship purposes using a controlled/simulated environment.
+
+No unauthorized systems were targeted, accessed, or compromised.
+
+---
+
+## 👨‍💻 Author
+
+**Rishikesh Poreddy**
+
+B.Tech — Cyber Security
+
+GitHub: [Rishikesh0024](https://github.com/Rishikesh0024)
